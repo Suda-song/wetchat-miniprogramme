@@ -1,0 +1,23 @@
+/* component/subject/subject.wxss */
+.pic{
+  width: 60rpx;
+  height: 60rpx;
+  background-color: rgba(211, 211, 211, .5);
+  border-radius: 100%; 
+}
+/* .picture{ */
+/*   display: flex;
+  justify-content: center;
+  align-items: center;  */
+/*   width: 120rpx;
+  height: 120rpx;  */
+/*   background-color: rgba(211, 211, 211, .5);
+  border-radius: 100%;  */
+/* } */
+.subject{
+  text-align: center;
+}
+.text{
+  width: 160rpx;
+  font-size: small;
+}

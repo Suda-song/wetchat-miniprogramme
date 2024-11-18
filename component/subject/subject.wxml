@@ -1,0 +1,8 @@
+<!--component/subject/subject.wxml-->
+<!-- <text>component/subject/subject.wxml</text> -->
+<view class="subject">
+  <navigator url="{{item.navto}}">
+    <view class="picture" ><image class="pic" src="{{item.thumb}}"></image></view>
+    <view class="text">{{item.name}}</view>
+  </navigator>
+</view>
