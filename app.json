@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/study/study",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/question/question",
+    "pages/class/ComChem/ComChem",
+    "pages/class/OgaChem/OgaChem",
+    "pages/class/ComChemEx/ComChemEx",
+    "pages/class/OgaChemEx/OgaChemEx",
+    "pages/class/AniChem/AniChem",
+    "pages/class/Phics_1/Phics_1",
+    "pages/class/Phics_2/Phics_2",
+    "pages/class/LA/LA",
+    "pages/class/Calculus_1/Calculus_1",
+    "pages/class/Calculus_2/Calculus_2",
+    "pages/class/ODE/ODE"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#003EA3",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "color": "#000000",
+    "selectedColor": "#4169E1",
+    "list": [
+      {
+        "pagePath": "pages/study/study",
+        "text": "资料",
+        "selected": "flase",
+        "iconPath": "./icon/资料 (2).png",
+        "selectedIconPath": "./icon/资料.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "个人中心",
+        "selected": "true",
+        "iconPath": "./icon/我.png",
+        "selectedIconPath": "./icon/我（点击）.png"
+      },
+      {
+        "pagePath": "pages/question/question",
+        "text": "解答",
+        "selected": "flase",
+        "iconPath": "./icon/提问-线性.png",
+        "selectedIconPath": "./icon/提问.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
