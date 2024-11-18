@@ -1,0 +1,52 @@
+/* pages/study/study.wxss */
+.page{
+/* width: 800rpx; */
+padding-top: 10rpx;
+margin: 0 auto;
+}
+.content{
+  width: 25%;
+  display: flex;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50rpx;
+
+}
+.nav{
+  display: flex;
+  flex: row;
+  text-align: center;
+}
+.nav-item{
+  width: 25%;
+  margin-top: 20rpx;
+  font-size: 12px;
+  
+}
+.nav-item image{
+  box-shadow:0 0 5px 2px rgba(105,105 ,105,1);
+}
+.shadow{
+  height: 5rpx;
+
+  /* margin-top: 15rpx; */
+  transform-origin: center center;
+  background-color: rgba(105,105,105,1);
+  box-shadow:0 0 5px 2px rgba(105,105 ,105,1);
+
+}
+.hr{
+  height: 5rpx;
+  background-color: rgba(105,105,105,1);
+}
+.select{
+  width: 25%;
+  margin-top: 20rpx;
+  font-size: 12px;
+}
+.topSw{
+  width: 100%;
+  
+}
+

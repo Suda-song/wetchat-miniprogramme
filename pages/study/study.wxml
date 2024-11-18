@@ -1,0 +1,54 @@
+<!--pages/study/study.wxml-->
+<!-- <text>pages/study/study.wxml</text> -->
+<view class="shadow"></view>
+<view class="page">
+  <view>
+    <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+      <block wx:for="{{img}}" wx:for-index="index" wx:for-item="item" wx:key="url">
+        <swiper-item>
+          <image src="{{item.url}}" class="topSw" mode="aspectFill"></image>
+        </swiper-item>
+      </block>  
+    </swiper>
+  </view>
+  <view class="nav">
+    <view id="0" class="{{currentTab == 0?'select':'nav-item'}}" bindtap="switchNav">
+      <view><image src="../../icon/通识课程.png" style="width:50rpx;height:50rpx"></image></view>
+      <view>全部</view>
+    </view>
+    <view id="1" class="{{currentTab == 1?'select':'nav-item'}}" bindtap="switchNav">
+      <view><image src="../../icon/通识课程.png" style="width:50rpx;height:50rpx"></image></view>
+      <view>通识选修</view>
+    </view>
+    <view id="2" class="{{currentTab == 2?'select':'nav-item'}}" bindtap="switchNav">
+      <view><image src="../../icon/通识课程.png" style="width:50rpx;height:50rpx"></image></view>
+      <view>通识必修</view>
+    </view>
+    <view id="3" class="{{currentTab == 3?'select':'nav-item'}}" bindtap="switchNav">
+      <view><image src="../../icon/通识课程.png" style="width:50rpx;height:50rpx"></image></view>
+      <view>专业课</view>
+    </view>
+    
+  </view>
+  <view class="hr"></view>
+  <block wx:if="0 == {{currentTab}}">
+    <view class="content" wx:for="{{subject}}" wx:key="index" wx:for-item="pic" wx:for-index="index">
+     <subject item="{{pic}}"></subject>
+    </view>
+  </block>
+  <block wx:elif="1 == {{currentTab}}">
+    <view class="content" wx:for="{{subject}}" wx:key="index" wx:for-item="pic" wx:for-index="index">
+     <subject item="{{pic}}"></subject>
+    </view>
+  </block>
+  <block wx:elif="2 == {{currentTab}}">
+    <view class="content" wx:for="{{subject}}" wx:key="index" wx:for-item="pic" wx:for-index="index">
+     <subject item="{{pic}}"></subject>
+    </view>
+  </block>
+  <block wx:elif="3 == {{currentTab}}">
+    <view class="content" wx:for="{{subject}}" wx:key="index" wx:for-item="pic" wx:for-index="index">
+     <subject item="{{pic}}"></subject>
+    </view>
+  </block>
+</view>

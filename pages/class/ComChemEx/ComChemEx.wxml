@@ -1,0 +1,78 @@
+<view>
+  <view>
+    <swiper indicator-dots='true' indicatator-color='green' autoplay ="true" interval="1500">
+      <swiper-item>
+        <image src="/icon/浙大.jpg"></image>
+      </swiper-item>
+    <swiper-item>
+        <image src="/icon/浙大2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+        <image src="/icon/浙大3.jpg"></image>
+    </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="class-container">
+    <view class="navbar">
+      <block wx:for="{{navbarTitle}}" wx:key="index">
+        <view class="navbar-item {{Index === index ? 'navbar-item-active' : ''}}" data-navbar-index="{{index}}" catchtap="onNavBarTap">
+          <text>{{item}}</text>
+        </view>
+      </block>
+    </view>
+
+   <view class="content-wrapper">
+     <swiper current="{{Index}}" bindanimationfinish="onBindAnimationFinish" class="content">
+       <swiper-item wx:for="{{navbarTitle}}" wx:key="index">
+         <scroll-view class="scroll-view">
+           <view  hidden="{{Index}}" class="introduction">
+             <view>{{introduction}}</view>
+             <view>{{test}}</view>
+           </view>
+
+           
+           <view hidden="{{Index-1}}">
+            <view  class="e_book">
+              <text>乙酸乙酸解离度和解离常数的测定讲义</text>
+              <button style="width:150rpx" type="primary" class="Watch" bindtap="OpenDoc_1">查看</button>
+            </view>
+            <view  class="e_book">
+              <text>天然水硬度的测定讲义</text>
+              <button style="width:150rpx" type="primary" class="Watch" bindtap="OpenDoc_2">查看</button>
+            </view>
+            </view>
+            <view hidden="{{Index-2}}">
+              <view  class="e_book">
+              <text>天然水硬度的测定基础知识</text>
+              <button style="width:150rpx" type="primary" class="Watch" bindtap="OpenDoc_3">查看</button>
+            </view>
+            <view  class="e_book">
+              <text>酸碱互滴练习基础知识</text>
+              <button style="width:150rpx" type="primary" class="Watch" bindtap="OpenDoc_4">查看</button>
+            </view>
+            <view  class="e_book">
+              <text>碘时钟反应基础知识</text>
+              <button style="width:150rpx" type="primary" class="Watch" bindtap="OpenDoc_8">查看</button>
+            </view>
+            </view>
+            <view hidden="{{Index-3}}">
+              <view  class="e_book">
+              <text>阿司匹林纯度分析（熔点和含量测定）讲义</text>
+              <button style="width:150rpx" type="primary" class="Watch" bindtap="OpenDoc_5">查看</button>
+            </view>
+            <view  class="e_book">
+              <text>阿司匹林纯度分析（熔点和含量测定）基础知识</text>
+              <button style="width:150rpx" type="primary" class="Watch" bindtap="OpenDoc_6">查看</button>
+            </view>
+            <view  class="e_book">
+              <text>阿司匹林的合成讲义</text>
+              <button style="width:150rpx" type="primary" class="Watch" bindtap="OpenDoc_7">查看</button>
+            </view>
+            </view>
+        </scroll-view>
+       </swiper-item>
+     </swiper>
+   </view>
+ </view>
+</view>

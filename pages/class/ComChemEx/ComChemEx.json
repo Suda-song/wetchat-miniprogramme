@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+  },
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#003EA3",
+    "navigationBarTitleText": "有机化学",
+    "navigationBarTextStyle":"white"
+
+}

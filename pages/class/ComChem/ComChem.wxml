@@ -1,0 +1,70 @@
+<view>
+  <view>
+    <swiper indicator-dots='true' indicatator-color='green' autoplay ="true" interval="1500">
+      <swiper-item>
+        <image src="/icon/浙大.jpg"></image>
+      </swiper-item>
+    <swiper-item>
+        <image src="/icon/浙大2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+        <image src="/icon/浙大3.jpg"></image>
+    </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="class-container">
+    <view class="navbar">
+      <block wx:for="{{navbarTitle}}" wx:key="index">
+        <view class="navbar-item {{Index === index ? 'navbar-item-active' : ''}}" data-navbar-index="{{index}}" catchtap="onNavBarTap">
+          <text>{{item}}</text>
+        </view>
+      </block>
+    </view>
+
+   <view class="content-wrapper">
+     <swiper current="{{Index}}" bindanimationfinish="onBindAnimationFinish" class="content">
+       <swiper-item wx:for="{{navbarTitle}}" wx:key="index">
+         <scroll-view class="scroll-view">
+           <view  hidden="{{Index}}" class="introduction">
+             <view>{{introduction}}</view>
+             <view>{{test}}</view>
+           </view>
+
+           
+           <view hidden="{{Index-1}}">
+            <view  class="e_book">
+              <text>第一章答案</text>
+              <button style="width:150rpx" type="primary" class="Watch" bindtap="OpenDoc_1">查看</button>
+            </view>
+            <view  class="e_book">
+              <text>第二章答案</text>
+              <button style="width:150rpx" type="primary" class="Watch" bindtap="OpenDoc">查看</button>
+            </view>
+            </view>
+            <view hidden="{{Index-2}}">
+              <view  class="e_book">
+              <text>第一章答案</text>
+              <button style="width:150rpx" type="primary" class="Watch" bindtap="OpenDoc_1">查看</button>
+            </view>
+            <view  class="e_book">
+              <text>第二章答案</text>
+              <button style="width:150rpx" type="primary" class="Watch" bindtap="OpenDoc">查看</button>
+            </view>
+            </view>
+            <view hidden="{{Index-3}}">
+              <view  class="e_book">
+              <text>第一章答案</text>
+              <button style="width:150rpx" type="primary" class="Watch" bindtap="OpenDoc_1">查看</button>
+            </view>
+            <view  class="e_book">
+              <text>第二章答案</text>
+              <button style="width:150rpx" type="primary" class="Watch" bindtap="OpenDoc">查看</button>
+            </view>
+            </view>
+        </scroll-view>
+       </swiper-item>
+     </swiper>
+   </view>
+ </view>
+</view>
